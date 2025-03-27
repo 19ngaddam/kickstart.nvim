@@ -403,7 +403,6 @@ require('lazy').setup({
             require('telescope.themes').get_dropdown(),
           },
           file_browser = {
-            theme = 'ivy',
           },
         },
       }
