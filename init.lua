@@ -402,8 +402,7 @@ require('lazy').setup({
           ['ui-select'] = {
             require('telescope.themes').get_dropdown(),
           },
-          file_browser = {
-          },
+          file_browser = {},
         },
       }
 
