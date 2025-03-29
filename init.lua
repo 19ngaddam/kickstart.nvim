@@ -162,6 +162,12 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 
 vim.keymap.set('i', 'jk', '<Esc>')
 vim.keymap.set('i', 'jj', '<Esc>')
+
+vim.api.nvim_set_keymap('n', '<C-/>', 'gcc', { noremap = false })
+vim.api.nvim_set_keymap('v', '<C-/>', 'gc', { noremap = false })
+
+vim.api.nvim_set_keymap('n', '<leader>b', '<C-^>', { noremap = true, silent = true })
+
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
 -- is not what someone will guess without a bit more experience.
